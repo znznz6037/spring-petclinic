@@ -87,7 +87,7 @@ class OwnerController {
 			owner.setFirstName(""); // empty string signifies broadest possible search
 		}
 
-		// find owners by last name
+		// find owners by first name
 		Collection<Owner> results = this.owners.findByFirstName(owner.getFirstName());
 		if (results.isEmpty()) {
 			// no owners found
